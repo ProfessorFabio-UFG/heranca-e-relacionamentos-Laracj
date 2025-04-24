@@ -1,0 +1,33 @@
+public class PessoaJuridica extends Pessoa{
+    protected String cnpj,razaosocial;
+
+    public PessoaJuridica(String nome, String endereco, String telefone, String cnpj, String razaosocial) {
+        super(nome, endereco, telefone);
+        this.cnpj = cnpj;
+        this.razaosocial = razaosocial;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getRazaosocial() {
+        return razaosocial;
+    }
+
+    public void setRazaosocial(String razaosocial) {
+        this.razaosocial = razaosocial;
+    }
+
+    @Override
+    public String toString() {
+        return "PessoaJuridica{" +
+                "cnpj:'" + cnpj + '\'' +
+                ", razaosocial:'" + razaosocial + '\'' +
+                '}';
+    }
+}
