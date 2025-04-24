@@ -1,0 +1,46 @@
+public class PessoaFisica extends Pessoa{
+
+    protected String cpf;
+    protected char sexo;
+    protected int estadocivil;
+
+    public PessoaFisica(String nome, String endereco, String telefone, String cpf, char sexo, int estadocivil) {
+        super(nome, endereco, telefone);
+        this.cpf = cpf;
+        this.sexo = sexo;
+        this.estadocivil = estadocivil;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public int getEstadocivil() {
+        return estadocivil;
+    }
+
+    public void setEstadocivil(int estadocivil) {
+        this.estadocivil = estadocivil;
+    }
+
+    @Override
+    public String toString() {
+        return "PessoaFisica{" +
+                "cpf:'" + cpf + '\'' +
+                ", sexo:" + sexo +
+                ", estado civil:" + estadocivil +
+                '}';
+    }
+}
